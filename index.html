@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <input id="paraulaSecreta" placeholder="Posa una paraula" type="password">
+        <button id="comencarPartida" onclick="comencarPartida()">Enviar</button>
+        <button id="mostrarParaula" onclick="mostrarParaula()">Mostra</button>
+    </header>
+    <main>
+        <h1 id="titolComencar">Començar partida</h1>
+        <div class="estadImatges">
+            <div id="estad">
+                <h2 id="jugador">Jugador 1</h2>
+                <h3>PUNTS PARTIDES ACTUALS <span id="partidesActuals">0</span></h3>
+                <h3>TOTAL PARTIDES <span id="totalPartides">0</span></h3>
+                <h3>PARTIDES GUANYADES <span id="partidesGuanyades">0</span></h3>
+                <h3>PARTIDA AMB MÉS PUNTS <span id="partidaAmbMesPunts">-</span></h3>
+            </div>
+            <div id="imatges">
+                <h2>IMATGE</h2>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="script/joc.js"></script>
+</html>

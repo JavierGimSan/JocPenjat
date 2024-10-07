@@ -1,0 +1,31 @@
+#titolComencar{
+    background-color: rgb(196, 230, 230);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.estadImatges{
+    background-color: pink;
+    display: flex;
+
+}
+
+#estad{
+    background-color: violet;
+    border-radius: 10px;
+}
+
+#imatges{
+    background-color: white;
+    padding: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
