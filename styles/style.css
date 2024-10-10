@@ -13,8 +13,11 @@
 }
 
 #estad{
+    display: flex;
+    flex-direction: column;
     background-color: violet;
     border-radius: 10px;
+    font-size: 0.8em;
 }
 
 #imatges{
