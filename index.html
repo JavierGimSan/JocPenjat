@@ -4,28 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility" /> <!--Icona de l'ull al botó 'mostra'-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <input id="paraulaSecreta" placeholder="Posa una paraula" type="password">
+        <input id="paraulaIntroduida" placeholder="Posa una paraula" type="password">
+        <button id="mostrarParaula" onclick="mostrarParaula()"><span class="material-symbols-outlined">
+            visibility
+            </span>
+        </button>
         <button id="comencarPartida" onclick="comencarPartida()">Enviar</button>
-        <button id="mostrarParaula" onclick="mostrarParaula()">Mostra</button>
+        
     </header>
     <main>
         <h1 id="titolComencar">Començar partida</h1>
         <div class="estadImatges">
             <div id="estad">
                 <h2 id="jugador">Jugador 1</h2>
-                <h3>PUNTS PARTIDES ACTUALS <span id="partidesActuals">0</span></h3>
-                <h3>TOTAL PARTIDES <span id="totalPartides">0</span></h3>
-                <h3>PARTIDES GUANYADES <span id="partidesGuanyades">0</span></h3>
-                <h3>PARTIDA AMB MÉS PUNTS <span id="partidaAmbMesPunts">-</span></h3>
+                <h3>PUNTS PARTIDES ACTUALS: <span id="partidesActuals">0</span></h3>
+                <h3>TOTAL PARTIDES: <span id="totalPartides">0</span></h3>
+                <h3>PARTIDES GUANYADES: <span id="partidesGuanyades">0</span></h3>
+                <h3>PARTIDA AMB MÉS PUNTS: <span id="partidaAmbMesPunts">-</span></h3>
             </div>
             <div id="imatges">
-                <h2>IMATGE</h2>
+                <img id = "imatge" src="images/penjat_10.jpg">
             </div>
         </div>
+        <section id="lletresContainer">
+            <section>
+                <button id="boto_1"onclick="jugarLletra(this)">A</button>
+                <button id="boto_2"onclick="jugarLletra(this)">B</button>
+                <button id="boto_3"onclick="jugarLletra(this)">C</button>
+                <button id="boto_4"onclick="jugarLletra(this)">D</button>
+                <button id="boto_5"onclick="jugarLletra(this)">E</button>
+                <button id="boto_6"onclick="jugarLletra(this)">F</button>
+                <button id="boto_7"onclick="jugarLletra(this)">G</button>
+                <button id="boto_8"onclick="jugarLletra(this)">H</button>
+                <button id="boto_9"onclick="jugarLletra(this)">I</button>
+                <button id="boto_10"onclick="jugarLletra(this)">J</button>
+                <button id="boto_11"onclick="jugarLletra(this)">K</button>
+                <button id="boto_12"onclick="jugarLletra(this)">L</button>
+                <button id="boto_13"onclick="jugarLletra(this)">M</button>
+                <button id="boto_14"onclick="jugarLletra(this)">N</button>
+                <button id="boto_15"onclick="jugarLletra(this)">O</button>
+                <button id="boto_16"onclick="jugarLletra(this)">P</button>
+                <button id="boto_17"onclick="jugarLletra(this)">Q</button>
+                <button id="boto_18"onclick="jugarLletra(this)">R</button>
+                <button id="boto_19"onclick="jugarLletra(this)">S</button>
+                <button id="boto_20"onclick="jugarLletra(this)">T</button>
+                <button id="boto_21"onclick="jugarLletra(this)">U</button>
+                <button id="boto_22"onclick="jugarLletra(this)">V</button>
+                <button id="boto_23"onclick="jugarLletra(this)">W</button>
+                <button id="boto_24"onclick="jugarLletra(this)">X</button>
+                <button id="boto_25"onclick="jugarLletra(this)">Y</button>
+                <button id="boto_26"onclick="jugarLletra(this)">Z</button>
+            </section>
+        </section>
 
     </main>
 </body>

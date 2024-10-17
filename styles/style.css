@@ -1,20 +1,53 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
 #titolComencar{
     background-color: rgb(196, 230, 230);
     display: flex;
     justify-content: center;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 10px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#mostrarParaula{
+    font-size: 0px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 0;
+}
+
+#comencarPartida{
+    margin-right: 5vw;
+}
+
+.material-symbols-outlined{
+    width: 100%
 }
 
 .estadImatges{
     background-color: pink;
     display: flex;
+    width: 100%;
+
 
 }
 
 #estad{
     display: flex;
     flex-direction: column;
+    padding: 1.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
     background-color: violet;
     border-radius: 10px;
     font-size: 0.8em;
@@ -22,13 +55,24 @@
 
 #imatges{
     background-color: white;
-    padding: 5%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    margin-left: 10%;
+    width: 20%;
+    margin-left: 20%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    overflow: hidden;
 
+}
+#imatges img{
+    width: 100%;
+}
+
+#lletresContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
