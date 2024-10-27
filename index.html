@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Joc del penjat</title>
 </head>
 <body>
     <header>
@@ -25,17 +25,18 @@
         <div class="estadImatges">
             <div id="estad">
                 <h2 id="jugador">Jugador 1</h2>
-                <h3>PUNTS PARTIDES ACTUALS: <span id="partidesActuals">0</span></h3>
+                <h3>PUNTS PARTIDA ACTUAL: <span id="puntsPartidaActual">0</span></h3>
                 <h3>TOTAL PARTIDES: <span id="totalPartides">0</span></h3>
                 <h3>PARTIDES GUANYADES: <span id="partidesGuanyades">0</span></h3>
                 <h3>PARTIDA AMB MÉS PUNTS: <span id="partidaAmbMesPunts">-</span></h3>
             </div>
             <div id="imatges">
-                <img id = "imatge" src="images/penjat_10.jpg">
+                <img id = "imatge" src="images/penjat_0.jpg">
             </div>
         </div>
         <section id="lletresContainer">
-            <section>
+            <section id = "contenidor-lletres">
+                <!-- Això de sota es MOLT repetitiu. Es pot fer més fàcil amb javascript-->
                 <button id="boto_1"onclick="jugarLletra(this)">A</button>
                 <button id="boto_2"onclick="jugarLletra(this)">B</button>
                 <button id="boto_3"onclick="jugarLletra(this)">C</button>
