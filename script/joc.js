@@ -34,6 +34,7 @@ console.log(paraulaActualObj);
 
 puntsPartidaActualInt = 0; //Inicialitzo els punts de la partida actual.
 puntsPartidaActualObj.textContent = puntsPartidaActualInt;
+
 function comencarPartida(){
     paraulaIntroduida = inpuObj.value.toUpperCase();    
     if(paraulaIntroduida){
@@ -122,8 +123,6 @@ function jugarLletra(obj){
             if(comptadorLletraCorrecta == paraulaSecreta.length){ //Si el comptador anterior arriva a la longitud de la paraula a endevinar...
                 partidaGuanyada(); //...s'activa la funció 'partida_guanyada'.
                 deshabilitarBoto();
-                inpuObj.disabled=false;
-                buttonObj.disabled=false;
 
                 partidesGuanyadesInt += 1; //Cada vegada que es guanya una partida augmenta 1.
                 partidesGuanyadesObj.textContent = partidesGuanyadesInt;
@@ -156,15 +155,15 @@ function habilitarBoto(){
     }
 }
 
-function crearBotons(){
-    for(let i = 1; i < lletres.length; i++){
-    const boto = document.createElement("button");
-    boto.id = "boto_" + i;
-    boto.textContent = lletres[i-1];
+// function crearBotons(){
+//     for(let i = 1; i < lletres.length; i++){
+//     const boto = document.createElement("button");
+//     boto.id = "boto_" + i;
+//     boto.textContent = lletres[i-1];
 
-    lletresContenidor.appendChild(boto);
-    }    
-}
-crearBotons();
+//     lletresContenidor.appendChild(boto);
+//     }    
+// }
+// crearBotons();
 
 
